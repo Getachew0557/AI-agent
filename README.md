@@ -50,6 +50,13 @@ You can also use the CLI to generate code directly:
 ```bash
 python backend/main.py
 ```
+
+## Demo
+
+Here’s a quick demonstration of the AI Code Assistant in action:
+
+![AICodGen Demo](AICodGen.gif)
+
 ## Folder Structure
 ```graphql
 ai_code_agent/
