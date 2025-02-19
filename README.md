@@ -1,6 +1,6 @@
 # AI Code Assistant (AI CodeGen)
 
-AI Code Assistant is an innovative tool that leverages the power of the Gemini API to generate code snippets and provide code explanations across multiple programming languages. It also features an AI chatbot for code-related queries, making it a comprehensive solution for developers and learners alike.
+AI Code Assistant is an innovative tool that leverages the power of the LLM API especially Gemini to generate code snippets and provide code explanations across multiple programming languages. It also features an AI chatbot for code-related queries, making it a comprehensive solution for developers and learners alike.
 
 ## Features
 
