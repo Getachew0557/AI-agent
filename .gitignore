@@ -1,0 +1,5 @@
+myenv
+.env
+.qodo
+__pycache__/
+config.py

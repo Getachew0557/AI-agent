@@ -1,0 +1,14 @@
+phi
+openai
+groq
+duckduckgo-search
+pytest
+pylint
+black
+streamlit
+fastapi
+uvicorn
+docker
+pydantic
+google-generativeai
+
