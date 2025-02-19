@@ -1,7 +1,12 @@
-# utils/code_explainer.py
+import google.generativeai as genai
+from config import GEMINI_API_KEY
 
 def explain_code(code):
-    # use a simple method or an API to explain the code.
-    explanation = f"This code performs the following operations:\n- {code.strip()[:50]}... (explanation to be implemented)"
-    
-    return explanation
+    genai.configure(api_key=GEMINI_API_KEY)
+    try:
+        model = genai.GenerativeModel("gemini-pro")
+        prompt = f"Explain this code in detail:\n{code}"
+        response = model.generate_content(prompt)
+        return response.text
+    except Exception as e:
+        return f"Error generating explanation: {str(e)}"
