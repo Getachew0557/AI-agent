@@ -1,27 +1,26 @@
+# Streamlit Web UI for AI Code Generation and Debugging
 import streamlit as st
 import sys
 import os
 from PIL import Image
-import tempfile
-import numpy as np
 
 # Add the project root directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from models.model import generate_code_gemini
+from models.model import generate_code_gemini, debug_code_gemini
 from chat.chatbot import chat_with_gemini
 from utils.language_support import SUPPORTED_LANGUAGES
 from utils.code_explainer import explain_code
 from utils.vision_model import extract_text_from_image
 
 def main():
-    st.title("🚀 AI Code Generator & Chatbot")
+    st.title("🚀 AI Code Assistant")
 
     tab1, tab2, tab3 = st.tabs(["Code Generator", "AI Chatbot", "Image to Code"])
 
     # Code Generator Tab
     with tab1:
-        st.header("Generate Code with AI")
+        st.header("Generate & Debug Code with AI")
         user_prompt = st.text_area("Describe what you want to generate:")
         language = st.selectbox("Select Programming Language", list(SUPPORTED_LANGUAGES.keys()))
         
@@ -46,6 +45,14 @@ def main():
                         file_name=f'generated_code.{SUPPORTED_LANGUAGES[language]}',
                         mime='text/plain'
                     )
+
+                    # Debugging Feature
+                    if st.button("Debug Code", key="debug_code"):
+                        st.write("Debugging code...")
+                        debugged_code = debug_code_gemini(generated_code)
+                        st.subheader("Debugged Code:")
+                        st.code(debugged_code, language=SUPPORTED_LANGUAGES[language])
+
                 else:
                     st.error("Failed to generate code. Please try again.")
             else:
@@ -94,9 +101,16 @@ def main():
                     explanation = explain_code(generated_code)
                     st.subheader("Code Explanation:")
                     st.write(explanation)
+                    
+                    # Debugging Feature for extracted code
+                    if st.button("Debug Extracted Code", key="debug_extracted_code"):
+                        st.write("Debugging extracted code...")
+                        debugged_code = debug_code_gemini(generated_code)
+                        st.subheader("Debugged Code:")
+                        st.code(debugged_code, language="python")
+
                 else:
                     st.error("Failed to generate code. Please try again.")
-
 
 if __name__ == "__main__":
     main()
