@@ -1,6 +1,6 @@
-# AI Code Assistant (AI CodeGen)
+# Multi-AI Agent Code Assistant (AI CodeGen)
 
-AI Code Assistant is an innovative tool that leverages the power of the LLM API especially Gemini to generate code snippets and provide code explanations across multiple programming languages. It also features an AI chatbot for code-related queries, making it a comprehensive solution for developers and learners alike.
+The Multi-AI Agent Code Assistant is a cutting-edge, AI-powered platform designed to revolutionize the way developers work. It seamlessly generates code across multiple programming languages, offers real-time code explanations, provides advanced debugging support, and features an interactive chat assistant for enhanced collaboration. Additionally, this all-in-one tool boasts the unique ability to convert images into code, empowering developers to translate visual concepts into functional code with ease. By streamlining the development process, this intelligent assistant aims to make coding faster, more efficient, and error-free, while supporting a wide range of programming environments.
 
 ## Features
 
