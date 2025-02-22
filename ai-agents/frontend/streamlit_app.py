@@ -14,7 +14,7 @@ from utils.code_explainer import explain_code
 from utils.vision_model import extract_text_from_image
 
 def main():
-    st.title("🚀 Multi Agent AI-poword Dev Assistant")
+    st.title("🚀 Multi-Agent Dev Assistant")
 
     tab1, tab2, tab3 = st.tabs(["Code Generator", "AI Chatbot", "Image to Code"])
 

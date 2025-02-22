@@ -1,4 +1,4 @@
-# Multi-Agent AI-Powerd dev Assistant
+# Multi-Agent Dev Assistant
 
 The Multi-Agent AI-Powerd dev Assistant is a cutting-edge, AI-powered platform designed to revolutionize the way developers work. It seamlessly generates code across multiple programming languages, offers real-time code explanations, provides advanced debugging support, and features an interactive chat assistant for enhanced collaboration. Additionally, this all-in-one tool boasts the unique ability to convert images into code, empowering developers to translate visual concepts into functional code with ease. By streamlining the development process, this intelligent assistant aims to make coding faster, more efficient, and error-free, while supporting a wide range of programming environments.
 
