@@ -1,6 +1,6 @@
-# Multi-AI Agent Code Assistant (AI CodeGen)
+# Multi-Agent AI-Powerd dev Assistant
 
-The Multi-AI Agent Code Assistant is a cutting-edge, AI-powered platform designed to revolutionize the way developers work. It seamlessly generates code across multiple programming languages, offers real-time code explanations, provides advanced debugging support, and features an interactive chat assistant for enhanced collaboration. Additionally, this all-in-one tool boasts the unique ability to convert images into code, empowering developers to translate visual concepts into functional code with ease. By streamlining the development process, this intelligent assistant aims to make coding faster, more efficient, and error-free, while supporting a wide range of programming environments.
+The Multi-Agent AI-Powerd dev Assistant is a cutting-edge, AI-powered platform designed to revolutionize the way developers work. It seamlessly generates code across multiple programming languages, offers real-time code explanations, provides advanced debugging support, and features an interactive chat assistant for enhanced collaboration. Additionally, this all-in-one tool boasts the unique ability to convert images into code, empowering developers to translate visual concepts into functional code with ease. By streamlining the development process, this intelligent assistant aims to make coding faster, more efficient, and error-free, while supporting a wide range of programming environments.
 
 ## Features
 
@@ -8,6 +8,8 @@ The Multi-AI Agent Code Assistant is a cutting-edge, AI-powered platform designe
 - **Code Explanation**: Get explanations for the generated code to enhance understanding.
 - **AI Chatbot**: Ask coding questions and receive instant responses from the AI chatbot.
 - **Multi-language Support**: Support for various programming languages, allowing flexibility in code generation.
+- **Code Dubbeger**: Debugging and error detection capabilities to ensure code quality.
+- **Image to Code**: Convert images into code, facilitating the translation of visual concepts into functional code.
 
 ## Installation
 

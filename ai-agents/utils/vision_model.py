@@ -1,3 +1,13 @@
+import pytesseract
+import cv2
+import numpy as np
+
+def extract_text_from_image(image):
+    """Extract text from an uploaded image using OCR."""
+    image = np.array(image)
+    text = pytesseract.image_to_string(image)
+    return text.strip()
+
 # Handles Gemini API integration for code generation and debugging
 import google.generativeai as genai
 from config import GEMINI_API_KEY
@@ -28,3 +38,4 @@ def debug_code_gemini(code):
         return response.text
     except Exception as e:
         return f"Error debugging code: {str(e)}"
+
